@@ -9,10 +9,10 @@ This directory tracks design references, prototype links, and product design dec
 ## Current Scope
 
 - Prototype a web marketplace.
-- Use English (US) as the product language.
-- Follow familiar ecommerce patterns inspired by Amazon's store structure.
-- Use a distinct visual identity, avoiding Amazon's brand colors.
-- Build modern, reusable UI components as the foundation for implementation.
+- English (US) as the product language.
+- Familiar ecommerce patterns inspired by Amazon's store structure.
+- Distinct visual identity, avoiding Amazon's brand colors.
+- Modern, reusable UI components as the foundation for implementation.
 
 ## Figma Structure
 
