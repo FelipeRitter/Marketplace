@@ -1,0 +1,8 @@
+<aside class="buy-box" aria-label="Purchase options">
+  <strong>{{ product.price | currency: 'USD' }}</strong>
+  <p>{{ product.deliveryPromise }}</p>
+  <span class="stock">{{ product.stockStatus === 'in-stock' ? 'In stock' : 'Low stock' }}</span>
+  <button class="primary" type="button">Add to cart</button>
+  <button class="secondary" type="button">Buy now</button>
+  <small><i class="pi pi-lock" aria-hidden="true"></i> Secure checkout</small>
+</aside>

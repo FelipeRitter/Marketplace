@@ -1,0 +1,125 @@
+.product-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  display: grid;
+  gap: 0.85rem;
+  min-width: 0;
+  padding: 0.75rem;
+}
+
+.product-visual {
+  background: var(--color-soft);
+  border-radius: var(--radius-md);
+  display: grid;
+  min-height: 9.4rem;
+  overflow: hidden;
+  place-items: center;
+  position: relative;
+}
+
+.badge {
+  background: color-mix(in srgb, var(--color-teal-500) 16%, white);
+  border-radius: 999px;
+  color: var(--color-teal-700);
+  font-size: 0.72rem;
+  font-weight: 900;
+  left: 0.75rem;
+  padding: 0.25rem 0.55rem;
+  position: absolute;
+  top: 0.75rem;
+}
+
+.mock-image {
+  aspect-ratio: 1.45;
+  border-radius: 1rem;
+  display: block;
+  width: 58%;
+}
+
+.mock-image[data-tone='mint'] {
+  background: linear-gradient(135deg, #d9f4ef, #84d7ca);
+}
+
+.mock-image[data-tone='coral'] {
+  background: linear-gradient(135deg, #ffe2db, #ff775f);
+}
+
+.mock-image[data-tone='blue'] {
+  background: linear-gradient(135deg, #dce9ff, #6f9df2);
+}
+
+.mock-image[data-tone='amber'] {
+  background: linear-gradient(135deg, #fff1c7, #ffbd45);
+}
+
+.mock-image[data-tone='green'] {
+  background: linear-gradient(135deg, #ddf7df, #62c96f);
+}
+
+.mock-image[data-tone='cream'] {
+  background: linear-gradient(135deg, #f7f1df, #d6c58f);
+}
+
+.mock-image[data-tone='slate'] {
+  background: linear-gradient(135deg, #dce4e8, #667781);
+}
+
+.product-copy {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.product-name {
+  color: var(--color-ink);
+  font-weight: 800;
+  line-height: 1.25;
+  min-height: 2.5rem;
+  text-decoration: none;
+}
+
+p {
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  line-height: 1.35;
+  margin: 0;
+  min-height: 2.4rem;
+}
+
+.rating {
+  align-items: center;
+  color: var(--color-green);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  font-weight: 800;
+  gap: 0.35rem;
+}
+
+.purchase-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchase-row strong {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.purchase-row span {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+
+button {
+  background: var(--color-teal-900);
+  border: 0;
+  border-radius: var(--radius-md);
+  color: var(--color-surface);
+  cursor: pointer;
+  font-weight: 900;
+  min-height: 2.15rem;
+  padding: 0 0.9rem;
+}

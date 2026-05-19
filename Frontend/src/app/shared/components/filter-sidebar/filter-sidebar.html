@@ -1,0 +1,14 @@
+<aside class="filter-sidebar" aria-label="Product filters">
+  <h2>Refine by</h2>
+  @for (group of filterGroups; track group.title) {
+    <section>
+      <h3>{{ group.title }}</h3>
+      @for (option of group.options; track option) {
+        <label>
+          <input type="checkbox" />
+          <span>{{ option }}</span>
+        </label>
+      }
+    </section>
+  }
+</aside>

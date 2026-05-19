@@ -1,0 +1,10 @@
+<article class="category-card" [attr.data-accent]="category.accent">
+  <h3>{{ category.title }}</h3>
+  <p>{{ category.description }}</p>
+  <div class="category-grid" aria-hidden="true">
+    @for (item of category.items; track item) {
+      <span>{{ item }}</span>
+    }
+  </div>
+  <a routerLink="/search">Shop now</a>
+</article>

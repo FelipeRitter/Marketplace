@@ -1,0 +1,50 @@
+<section class="hero">
+  <div class="hero-copy">
+    <span>Spring market event</span>
+    <h1>Find fresh deals across every aisle.</h1>
+    <p>Shop curated products, trusted sellers, fast delivery options, and daily offers in one modern marketplace.</p>
+    <div class="hero-actions">
+      <a class="primary-action" routerLink="/search">Shop deals</a>
+      <a class="secondary-action" routerLink="/search">Explore categories</a>
+    </div>
+  </div>
+
+  <div class="hero-collage" aria-label="Featured marketplace products">
+    <span class="tile mint"></span>
+    <span class="tile coral"></span>
+    <span class="tile amber"></span>
+    <span class="tile blue"></span>
+  </div>
+</section>
+
+<section class="content-band">
+  <div class="section-heading">
+    <div>
+      <span>Browse faster</span>
+      <h2>Featured categories</h2>
+    </div>
+    <a routerLink="/search">View all</a>
+  </div>
+
+  <div class="category-list">
+    @for (category of categories; track category.id) {
+      <app-category-card [category]="category" />
+    }
+  </div>
+</section>
+
+<section class="content-band">
+  <div class="section-heading">
+    <div>
+      <span>Limited-time picks</span>
+      <h2>Today featured deals</h2>
+    </div>
+    <a routerLink="/search">Shop deals</a>
+  </div>
+
+  <div class="product-grid">
+    @for (product of featuredProducts; track product.id) {
+      <app-product-card [product]="product" />
+    }
+  </div>
+</section>

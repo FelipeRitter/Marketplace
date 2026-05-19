@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="primary-nav">
+    <a class="brand" routerLink="/" aria-label="MarketNest home">MarketNest</a>
+    <app-search-bar />
+    <div class="nav-actions" aria-label="Account actions">
+      <a class="delivery" routerLink="/">Deliver to Austin</a>
+      <a routerLink="/">Account</a>
+      <a routerLink="/">Orders</a>
+      <a class="cart" routerLink="/">Cart <strong>$0.00</strong></a>
+    </div>
+  </div>
+
+  <nav class="category-nav" aria-label="Marketplace categories">
+    @for (item of navigationItems; track item) {
+      <a routerLink="/search">{{ item }}</a>
+    }
+  </nav>
+</header>
+
+<main class="page-content">
+  <ng-content />
+</main>

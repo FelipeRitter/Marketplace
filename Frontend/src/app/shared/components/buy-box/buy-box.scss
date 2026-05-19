@@ -1,0 +1,48 @@
+.buy-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem;
+}
+
+strong {
+  font-size: 1.45rem;
+}
+
+p,
+small {
+  color: var(--color-muted);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.stock {
+  color: var(--color-green);
+  font-weight: 900;
+}
+
+button {
+  border: 0;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: 900;
+  min-height: 2.65rem;
+}
+
+.primary {
+  background: var(--color-coral);
+  color: var(--color-surface);
+}
+
+.secondary {
+  background: var(--color-teal-900);
+  color: var(--color-surface);
+}
+
+small {
+  align-items: center;
+  display: flex;
+  gap: 0.4rem;
+}
