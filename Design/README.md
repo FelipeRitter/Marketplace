@@ -19,3 +19,9 @@ This directory tracks design references, prototype links, and product design dec
 - `00 Foundations`: colors, typography, and design principles.
 - `01 Components`: reusable UI components.
 - `02 Prototype`: initial desktop screens.
+
+## Design Documentation
+
+- [Screen Map](screen-map.md): planned screens, priorities, and product areas.
+- [User Flows](user-flows.md): primary shopper, authentication, seller, and return flows.
+- [Screen Specs](screen-specs.md): requirements for the next screens and reusable UI patterns.
