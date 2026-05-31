@@ -1,0 +1,14 @@
+<form class="search-bar" role="search" (ngSubmit)="submitSearch()">
+  <label class="category-select" for="marketplace-search">All categories</label>
+  <input
+    id="marketplace-search"
+    name="searchTerm"
+    type="search"
+    [(ngModel)]="searchTerm"
+    placeholder="Search products, brands, and creators"
+  />
+  <button type="submit" aria-label="Search marketplace">
+    <i class="pi pi-search" aria-hidden="true"></i>
+    <span>Search</span>
+  </button>
+</form>

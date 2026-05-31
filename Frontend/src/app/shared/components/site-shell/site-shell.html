@@ -1,0 +1,34 @@
+<header class="site-header">
+  <div class="primary-nav">
+    <a class="brand" routerLink="/" aria-label="MarketNest home">MarketNest</a>
+    <app-search-bar />
+    <div class="nav-actions" aria-label="Account actions">
+      <a class="delivery" routerLink="/">Deliver to Austin</a>
+      <details class="user-menu" [open]="isUserMenuOpen">
+        <summary (click)="$event.preventDefault(); toggleUserMenu()">
+          <span>Signed in as</span>
+          <strong>{{ user.fullName.split(' ')[0] }}</strong>
+        </summary>
+        <div class="user-menu-panel">
+          <a routerLink="/account" (click)="closeUserMenu()">My Account</a>
+          <a routerLink="/account/orders" (click)="closeUserMenu()">Order History</a>
+          <a routerLink="/sell-product" (click)="closeUserMenu()">Sell Product</a>
+          <a routerLink="/sign-up" (click)="closeUserMenu()">Create Account</a>
+        </div>
+      </details>
+      <a routerLink="/account/orders">Orders</a>
+      <a class="cart" routerLink="/">Cart <strong>$0.00</strong></a>
+    </div>
+  </div>
+
+  <nav class="category-nav" aria-label="Marketplace categories">
+    <a class="sell-link" routerLink="/sell-product">Sell on MarketNest</a>
+    @for (item of navigationItems; track item) {
+      <a routerLink="/search">{{ item }}</a>
+    }
+  </nav>
+</header>
+
+<main class="page-content">
+  <ng-content />
+</main>

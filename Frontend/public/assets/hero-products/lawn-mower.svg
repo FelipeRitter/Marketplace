@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title">
+  <title id="title">Fictitious lawn mower</title>
+  <rect width="320" height="220" rx="28" fill="#ddf7df"/>
+  <path d="M82 138h138c14 0 26 10 29 24H62c3-14 9-24 20-24Z" fill="#15944d"/>
+  <rect x="104" y="106" width="74" height="38" rx="12" fill="#ffb83a"/>
+  <rect x="126" y="82" width="28" height="30" rx="8" fill="#082d30"/>
+  <path d="M214 134c16-42 42-68 76-80" fill="none" stroke="#056d6d" stroke-width="10" stroke-linecap="round"/>
+  <path d="M252 68h42" fill="none" stroke="#056d6d" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="96" cy="166" r="24" fill="#0d1217"/>
+  <circle cx="220" cy="166" r="24" fill="#0d1217"/>
+  <circle cx="96" cy="166" r="9" fill="#dbe2e6"/>
+  <circle cx="220" cy="166" r="9" fill="#dbe2e6"/>
+  <path d="M56 184c50 8 120 8 208 0" fill="none" stroke="#0b6d6d" stroke-width="7" stroke-linecap="round" opacity=".45"/>
+</svg>

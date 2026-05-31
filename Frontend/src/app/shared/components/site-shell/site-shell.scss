@@ -1,0 +1,128 @@
+.site-header {
+  background: var(--color-teal-900);
+  color: var(--color-surface);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.primary-nav {
+  align-items: center;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 10rem minmax(24rem, 1fr) auto;
+  min-height: 4.5rem;
+  padding: 0 3rem;
+}
+
+.brand {
+  color: var(--color-surface);
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.nav-actions {
+  align-items: center;
+  display: flex;
+  gap: 1.1rem;
+  white-space: nowrap;
+}
+
+.nav-actions a,
+.category-nav a {
+  color: var(--color-surface);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user-menu summary {
+  align-items: center;
+  color: var(--color-surface);
+  cursor: pointer;
+  display: grid;
+  font-size: 0.78rem;
+  font-weight: 700;
+  gap: 0.1rem;
+  list-style: none;
+}
+
+.user-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.user-menu summary span {
+  color: var(--color-teal-100);
+}
+
+.user-menu-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 0.25rem;
+  min-width: 13rem;
+  padding: 0.55rem;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.75rem);
+  z-index: 30;
+}
+
+.user-menu-panel a {
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
+  padding: 0.7rem 0.8rem;
+}
+
+.user-menu-panel a:hover {
+  background: var(--color-soft);
+}
+
+.delivery {
+  color: var(--color-teal-100) !important;
+}
+
+.cart strong {
+  color: var(--color-amber);
+}
+
+.category-nav {
+  align-items: center;
+  background: var(--color-teal-700);
+  display: flex;
+  gap: 1.65rem;
+  min-height: 2.65rem;
+  overflow-x: auto;
+  padding: 0 3rem;
+}
+
+.sell-link {
+  color: var(--color-amber) !important;
+}
+
+.page-content {
+  min-height: calc(100vh - 7.15rem);
+}
+
+@media (max-width: 960px) {
+  .primary-nav {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .nav-actions {
+    justify-content: space-between;
+    overflow-x: auto;
+  }
+
+  .category-nav {
+    padding: 0 1rem;
+  }
+}

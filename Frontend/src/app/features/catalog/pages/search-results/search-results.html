@@ -1,0 +1,26 @@
+<section class="results-page">
+  <div class="results-header">
+    <p>Home / Electronics / Audio</p>
+    <h1>Results for "{{ searchTerm }}"</h1>
+    <span>1-{{ products.length }} of 1,842 results</span>
+  </div>
+
+  <div class="results-layout">
+    <app-filter-sidebar />
+
+    <section class="results-content" aria-label="Search results">
+      <div class="sort-bar">
+        <span>Sort by: <strong>Featured</strong></span>
+        <span>Prime eligible</span>
+        <span>Deals</span>
+        <span>Under $100</span>
+      </div>
+
+      <div class="product-grid">
+        @for (product of products; track product.id) {
+          <app-product-card [product]="product" />
+        }
+      </div>
+    </section>
+  </div>
+</section>

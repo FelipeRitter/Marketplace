@@ -1,0 +1,28 @@
+<article class="product-card">
+  <a class="product-visual" [routerLink]="['/product', product.slug]" [attr.aria-label]="'Open ' + product.name">
+    @if (product.badge) {
+      <span class="badge">{{ product.badge }}</span>
+    }
+    <span class="mock-image" [attr.data-tone]="product.imageTone"></span>
+  </a>
+
+  <div class="product-copy">
+    <a class="product-name" [routerLink]="['/product', product.slug]">{{ product.name }}</a>
+    <p>{{ product.summary }}</p>
+    <div class="rating">
+      <i class="pi pi-star-fill" aria-hidden="true"></i>
+      <span>{{ product.rating | number: '1.1-1' }}</span>
+      <span>{{ product.reviewCount | number }} reviews</span>
+    </div>
+  </div>
+
+  <div class="purchase-row">
+    <div>
+      <strong>{{ product.price | currency: 'USD' }}</strong>
+      @if (product.previousPrice) {
+        <span>{{ product.previousPrice | currency: 'USD' }}</span>
+      }
+    </div>
+    <button type="button">Add</button>
+  </div>
+</article>

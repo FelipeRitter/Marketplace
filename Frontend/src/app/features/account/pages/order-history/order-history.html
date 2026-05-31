@@ -1,0 +1,43 @@
+<section class="orders-page">
+  <div class="page-heading">
+    <span>Orders</span>
+    <h1>Order history</h1>
+    <p>Track recent purchases, delivery status, totals, and support actions.</p>
+  </div>
+
+  <div class="order-list">
+    @for (order of orders; track order.id) {
+      <article class="order-card">
+        <header>
+          <div>
+            <span>Order placed</span>
+            <strong>{{ order.placedAt | date: 'mediumDate' }}</strong>
+          </div>
+          <div>
+            <span>Total</span>
+            <strong>{{ order.total | currency: 'USD' }}</strong>
+          </div>
+          <div>
+            <span>Order ID</span>
+            <strong>{{ order.id }}</strong>
+          </div>
+          <mark [attr.data-status]="order.status">{{ order.status | titlecase }}</mark>
+        </header>
+
+        <section class="order-body">
+          <div>
+            <h2>{{ order.deliveryEstimate }}</h2>
+            @for (item of order.items; track item.productName) {
+              <p>{{ item.quantity }} x {{ item.productName }} - {{ item.unitPrice | currency: 'USD' }}</p>
+            }
+          </div>
+          <div class="order-actions">
+            <button type="button">Track package</button>
+            <button type="button">Buy again</button>
+            <button type="button">Get support</button>
+          </div>
+        </section>
+      </article>
+    }
+  </div>
+</section>

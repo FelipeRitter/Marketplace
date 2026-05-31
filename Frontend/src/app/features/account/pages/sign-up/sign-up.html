@@ -1,0 +1,84 @@
+<section class="form-page">
+  <div class="page-intro">
+    <span>Customer profile</span>
+    <h1>Create your MarketNest account</h1>
+    <p>Fill in your personal information and complete address to prepare checkout, seller tools, and order tracking.</p>
+  </div>
+
+  <form class="signup-form" [formGroup]="signUpForm" (ngSubmit)="submitSignUp()">
+    <section class="form-card">
+      <h2>Personal information</h2>
+      <div class="field-grid">
+        <label>
+          Full name
+          <input formControlName="fullName" type="text" autocomplete="name" />
+        </label>
+        <label>
+          Birth date
+          <input formControlName="birthDate" type="date" />
+        </label>
+        <label>
+          Document number
+          <input formControlName="documentNumber" type="text" />
+        </label>
+        <label>
+          Email
+          <input formControlName="email" type="email" autocomplete="email" />
+        </label>
+        <label>
+          Phone
+          <input formControlName="phone" type="tel" autocomplete="tel" />
+        </label>
+      </div>
+    </section>
+
+    <section class="form-card">
+      <h2>Complete address</h2>
+      <div class="field-grid address-grid">
+        <label class="street-field">
+          Street
+          <input formControlName="street" type="text" autocomplete="address-line1" />
+        </label>
+        <label class="number-field">
+          Number
+          <input formControlName="number" type="text" />
+        </label>
+        <label class="complement-field">
+          Complement
+          <input formControlName="complement" type="text" autocomplete="address-line2" />
+        </label>
+        <label class="neighborhood-field">
+          Neighborhood
+          <input formControlName="neighborhood" type="text" />
+        </label>
+        <label class="city-field">
+          City
+          <input formControlName="city" type="text" autocomplete="address-level2" />
+        </label>
+        <label class="state-field">
+          State
+          <input formControlName="state" type="text" autocomplete="address-level1" />
+        </label>
+        <label class="postal-code-field">
+          Postal code
+          <input formControlName="postalCode" type="text" autocomplete="postal-code" />
+        </label>
+        <label class="country-field">
+          Country
+          <input formControlName="country" type="text" autocomplete="country-name" />
+        </label>
+      </div>
+    </section>
+
+    @if (wasSubmitted) {
+      <div class="success-panel" role="status">
+        Account draft saved locally for this prototype. Backend integration will persist it later.
+      </div>
+    }
+
+    <div class="form-actions">
+      <a routerLink="/">Cancel</a>
+      <button type="submit">Create account</button>
+    </div>
+  </form>
+</section>

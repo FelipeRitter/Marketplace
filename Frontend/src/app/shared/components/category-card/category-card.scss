@@ -1,0 +1,49 @@
+.category-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  display: grid;
+  gap: 0.8rem;
+  min-width: 0;
+  padding: 1rem;
+}
+
+h3,
+p {
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+p {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.category-grid {
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.category-grid span {
+  align-items: center;
+  background: var(--color-soft);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
+  display: flex;
+  font-size: 0.78rem;
+  font-weight: 800;
+  min-height: 2.7rem;
+  padding: 0.5rem;
+}
+
+a {
+  color: var(--color-teal-700);
+  font-size: 0.88rem;
+  font-weight: 900;
+  text-decoration: none;
+}
