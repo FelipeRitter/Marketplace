@@ -1,0 +1,65 @@
+<section class="account-page">
+  <div class="account-hero">
+    <div>
+      <span>My Account</span>
+      <h1>Welcome back, {{ user.fullName.split(' ')[0] }}.</h1>
+      <p>Review your profile, primary address, order activity, and seller actions from one place.</p>
+    </div>
+    <a routerLink="/sell-product">Sell Product</a>
+  </div>
+
+  <div class="account-grid">
+    <section class="profile-card">
+      <h2>Personal data</h2>
+      <dl>
+        <div>
+          <dt>Full name</dt>
+          <dd>{{ user.fullName }}</dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd>{{ user.email }}</dd>
+        </div>
+        <div>
+          <dt>Birth date</dt>
+          <dd>{{ user.birthDate | date: 'mediumDate' }}</dd>
+        </div>
+        <div>
+          <dt>Document number</dt>
+          <dd>{{ user.documentNumber }}</dd>
+        </div>
+        <div>
+          <dt>Phone</dt>
+          <dd>{{ user.phone }}</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="profile-card">
+      <h2>Primary address</h2>
+      <address>
+        {{ user.primaryAddress.street }}, {{ user.primaryAddress.number }}<br />
+        {{ user.primaryAddress.complement }}<br />
+        {{ user.primaryAddress.neighborhood }}<br />
+        {{ user.primaryAddress.city }}, {{ user.primaryAddress.state }} {{ user.primaryAddress.postalCode }}<br />
+        {{ user.primaryAddress.country }}
+      </address>
+    </section>
+
+    <section class="quick-actions">
+      <h2>Account shortcuts</h2>
+      <a routerLink="/account/orders">
+        <i class="pi pi-box" aria-hidden="true"></i>
+        View order history
+      </a>
+      <a routerLink="/sell-product">
+        <i class="pi pi-tag" aria-hidden="true"></i>
+        Announce a product
+      </a>
+      <a routerLink="/sign-up">
+        <i class="pi pi-user-edit" aria-hidden="true"></i>
+        Review sign-up form
+      </a>
+    </section>
+  </div>
+</section>

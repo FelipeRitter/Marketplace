@@ -1,0 +1,207 @@
+.sell-page {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2.5rem 3rem 3rem;
+}
+
+.page-heading {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.page-heading span,
+.preview-card > span {
+  color: var(--color-teal-700);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.35rem;
+}
+
+.page-heading p,
+.form-card p,
+.preview-card p {
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+.listing-layout {
+  align-items: start;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr) 22rem;
+}
+
+.listing-form,
+.form-card,
+.preview-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-card,
+.preview-card,
+.success-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+}
+
+.field-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.wide {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: grid;
+  font-size: 0.9rem;
+  font-weight: 800;
+  gap: 0.45rem;
+}
+
+input,
+select,
+textarea {
+  background: var(--color-soft);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  min-height: 2.85rem;
+  padding: 0.75rem 0.85rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.upload-dropzone,
+.preview-image {
+  align-items: center;
+  background: var(--color-soft);
+  border: 1px dashed var(--color-teal-500);
+  border-radius: var(--radius-lg);
+  display: grid;
+  justify-items: center;
+  min-height: 9rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.upload-dropzone i,
+.preview-image i {
+  color: var(--color-teal-700);
+  font-size: 2rem;
+}
+
+.upload-dropzone span {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.category-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.category-picker button,
+.form-actions button {
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: 900;
+  min-height: 2.55rem;
+  padding: 0 0.9rem;
+}
+
+.category-picker button {
+  background: var(--color-soft);
+  border: 1px solid var(--color-line);
+  color: var(--color-ink);
+}
+
+.category-picker button.selected {
+  background: color-mix(in srgb, var(--color-teal-500) 14%, white);
+  border-color: var(--color-teal-500);
+  color: var(--color-teal-700);
+}
+
+.success-panel {
+  background: color-mix(in srgb, var(--color-green) 10%, white);
+  color: var(--color-green);
+  font-weight: 900;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.primary {
+  background: var(--color-coral);
+  border: 0;
+  color: var(--color-surface);
+}
+
+.secondary {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  color: var(--color-ink);
+}
+
+.preview-card {
+  position: sticky;
+  top: 8.5rem;
+}
+
+.preview-card h2 {
+  font-size: 1.25rem;
+}
+
+.preview-card strong {
+  font-size: 1.5rem;
+}
+
+.preview-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.preview-tags small {
+  background: var(--color-soft);
+  border-radius: 999px;
+  color: var(--color-teal-700);
+  font-weight: 900;
+  padding: 0.35rem 0.65rem;
+}
+
+@media (max-width: 980px) {
+  .sell-page {
+    padding: 1.25rem;
+  }
+
+  .listing-layout,
+  .field-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-card {
+    position: static;
+  }
+}
