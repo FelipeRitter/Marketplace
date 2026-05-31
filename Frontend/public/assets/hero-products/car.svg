@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title">
+  <title id="title">Fictitious compact car</title>
+  <rect width="320" height="220" rx="28" fill="#e3f6f2"/>
+  <path d="M56 132h208c10 0 18 8 18 18v16H38v-16c0-10 8-18 18-18Z" fill="#ff6145"/>
+  <path d="M88 102h126c18 0 35 11 42 28H65c4-17 11-28 23-28Z" fill="#0b6d6d"/>
+  <path d="M104 112h44v18H84c4-10 9-18 20-18Zm58 0h48c13 0 24 7 31 18h-79v-18Z" fill="#d9f4ef"/>
+  <circle cx="92" cy="166" r="24" fill="#0d1217"/>
+  <circle cx="228" cy="166" r="24" fill="#0d1217"/>
+  <circle cx="92" cy="166" r="10" fill="#dbe2e6"/>
+  <circle cx="228" cy="166" r="10" fill="#dbe2e6"/>
+  <rect x="242" y="138" width="28" height="10" rx="5" fill="#ffb83a"/>
+</svg>

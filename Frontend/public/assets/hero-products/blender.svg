@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title">
+  <title id="title">Fictitious blender</title>
+  <rect width="320" height="220" rx="28" fill="#fff1c7"/>
+  <path d="M118 42h84l-12 88h-60L118 42Z" fill="#d9f4ef" stroke="#056d6d" stroke-width="8"/>
+  <path d="M134 54h52l-7 64h-38l-7-64Z" fill="#ffffff" opacity=".65"/>
+  <rect x="106" y="126" width="108" height="58" rx="16" fill="#ff6145"/>
+  <rect x="124" y="142" width="72" height="18" rx="9" fill="#0d1217" opacity=".85"/>
+  <circle cx="160" cy="170" r="8" fill="#ffb83a"/>
+  <rect x="130" y="30" width="60" height="18" rx="9" fill="#082d30"/>
+  <path d="M204 70c24 4 35 20 28 42-5 16-18 25-38 28" fill="none" stroke="#056d6d" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -83,24 +83,31 @@ h1 {
 }
 
 .tile {
-  aspect-ratio: 1.35;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  min-width: 0;
+  padding: 0.55rem;
+  place-items: center;
 }
 
-.mint {
-  background: linear-gradient(135deg, #ddf5ef, #66d1c3);
+.tile img {
+  aspect-ratio: 1.35;
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  object-fit: contain;
 }
 
-.coral {
-  background: linear-gradient(135deg, #ffe0d8, #ff765e);
-}
-
-.amber {
-  background: linear-gradient(135deg, #fff2c6, #ffbf46);
-}
-
-.blue {
-  background: linear-gradient(135deg, #d8e7ff, #6c9df5);
+.tile figcaption {
+  color: var(--color-ink);
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .content-band {
