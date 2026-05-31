@@ -14,4 +14,13 @@ export class SiteShellComponent {
 
   readonly navigationItems = ['Today Deals', 'New Releases', 'Best Sellers', 'Small Business', 'Gift Cards', 'Customer Service'];
   readonly user = this.account.getCurrentUser();
+  isUserMenuOpen = false;
+
+  closeUserMenu(): void {
+    this.isUserMenuOpen = false;
+  }
+
+  toggleUserMenu(): void {
+    this.isUserMenuOpen = !this.isUserMenuOpen;
+  }
 }

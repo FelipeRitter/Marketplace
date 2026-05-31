@@ -4,16 +4,16 @@
     <app-search-bar />
     <div class="nav-actions" aria-label="Account actions">
       <a class="delivery" routerLink="/">Deliver to Austin</a>
-      <details class="user-menu">
-        <summary>
+      <details class="user-menu" [open]="isUserMenuOpen">
+        <summary (click)="$event.preventDefault(); toggleUserMenu()">
           <span>Signed in as</span>
           <strong>{{ user.fullName.split(' ')[0] }}</strong>
         </summary>
         <div class="user-menu-panel">
-          <a routerLink="/account">My Account</a>
-          <a routerLink="/account/orders">Order History</a>
-          <a routerLink="/sell-product">Sell Product</a>
-          <a routerLink="/sign-up">Create Account</a>
+          <a routerLink="/account" (click)="closeUserMenu()">My Account</a>
+          <a routerLink="/account/orders" (click)="closeUserMenu()">Order History</a>
+          <a routerLink="/sell-product" (click)="closeUserMenu()">Sell Product</a>
+          <a routerLink="/sign-up" (click)="closeUserMenu()">Create Account</a>
         </div>
       </details>
       <a routerLink="/account/orders">Orders</a>

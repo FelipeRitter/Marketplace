@@ -57,11 +57,20 @@ h1 {
 }
 
 .address-grid {
-  grid-template-columns: 2fr 0.8fr repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 2fr) minmax(8rem, 0.8fr) minmax(0, 1fr);
 }
 
 .wide {
   grid-column: span 2;
+}
+
+.street-field,
+.neighborhood-field {
+  grid-column: span 2;
+}
+
+.country-field {
+  grid-column: span 1;
 }
 
 label {
@@ -70,6 +79,7 @@ label {
   font-size: 0.9rem;
   font-weight: 800;
   gap: 0.45rem;
+  min-width: 0;
 }
 
 input {
@@ -77,7 +87,9 @@ input {
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
   min-height: 2.85rem;
+  min-width: 0;
   padding: 0 0.85rem;
+  width: 100%;
 }
 
 .success-panel {
@@ -126,6 +138,12 @@ input {
   }
 
   .wide {
+    grid-column: auto;
+  }
+
+  .street-field,
+  .neighborhood-field,
+  .country-field {
     grid-column: auto;
   }
 }
