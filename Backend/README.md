@@ -9,7 +9,7 @@ The backend will start as a Spring Boot modular monolith, prepared for future se
 ## Runtime Stack
 
 - Java 26 currently installed locally
-- Spring Boot
+- Spring Boot 4.1
 - Maven
 - PostgreSQL
 - Flyway
@@ -46,3 +46,18 @@ Services:
 - Notification
 
 See `docs/backend-architecture.md` for the initial architecture notes.
+
+## Marketplace API
+
+The Spring Boot application lives in `marketplace-api`.
+
+The first implemented module is Identity and Authentication, with:
+
+- Complete user registration.
+- Email/password login.
+- JWT access tokens.
+- Authenticated profile endpoint.
+- Default local administrator.
+- Role-based administrator authorization.
+
+See `marketplace-api/README.md` for endpoints, local credentials, configuration, and test commands.
